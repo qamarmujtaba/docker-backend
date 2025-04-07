@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGO_URI, {
 
 // Default route
 app.get("/", (req, res) => {
-    res.send("All files from Backend is running!");
+    res.send("All  New files from Backend is running!");
 });
 
 // ✅ Fix: Add API route
