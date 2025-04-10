@@ -25,5 +25,5 @@ jobs:
           ssh -o StrictHostKeyChecking=no ubuntu@${{ secrets.EC2_HOST }} "
             cd ~/fullstack-app/backend
             sudo docker build -t backend .
-            sudo docker run -d --name backend -p 3001:3001 --restart unless-stopped backend
+            sudo docker run -d --name backend -p 5000:5000 --restart unless-stopped backend
           "
